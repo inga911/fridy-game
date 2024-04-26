@@ -7,17 +7,17 @@ body {
 }
 
 .main-box {
-  width: 90%;
+  width: fit-content;
   border: 1px solid rgba(173, 171, 171, 0.537);
   border-radius: 10px;
   margin: 55px auto;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   gap: 20px;
   padding: 20px;
   justify-content: center;
   background-color: rgba(34, 57, 95, 0.659);
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.446);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .card {
