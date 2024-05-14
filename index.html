@@ -15,12 +15,38 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="time-box">
-      Your time <span class="time">00:00</span>
-      <div>Clicked <span class="clicks-result">0</span> times</div>
+    <div class="container">
+      <div class="get-user-name">
+        <span>Player Name: </span>
+        <input id="playerName" type="text" />
+        <span id="startBtn" class="start-btn">Start Game!</span>
+      </div>
+      <div class="results-box">
+        <div>Your time <span class="time">00:00</span></div>
+        <div>Clicked <span class="clicks">0</span> times</div>
+        <div class="score">Scores: <span id="score">0</span></div>
+      </div>
+      <div class="main-box"></div>
+      <div class="buttons">
+        <div class="reset-btn">Reset</div>
+        <div class="play-again-btn">Play Again</div>
+      </div>
+      <div class="all-results">
+        <table>
+          <thead>
+            <td>Place</td>
+            <td>Name</td>
+            <td>Time</td>
+            <td>Clicks</td>
+          </thead>
+          <tbody id="resultsTableBody">
+            <td class="results-place"></td>
+            <td class="results-name"></td>
+            <td class="results-time"></td>
+            <td class="results-clicks"></td>
+          </tbody>
+        </table>
+      </div>
     </div>
-    <div class="score">Scores: <span id="score">0</span></div>
-    <div class="main-box"></div>
-    <button>Reset</button>
   </body>
 </html>
